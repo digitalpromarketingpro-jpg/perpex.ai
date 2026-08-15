@@ -1,0 +1,26 @@
+# CODEOWNERS — PerpEx
+# Defines required reviewers for pull requests by path.
+# At least one owner from each matching pattern must approve before merging.
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# ── Default owner for everything ─────────────────────────────
+*                          @your-github-username
+
+# ── Security-critical files ───────────────────────────────────
+# Any change to env templates, auth, or security config must be reviewed
+.env.example               @your-github-username
+.gitignore                 @your-github-username
+lib/supabase/              @your-github-username
+context/auth-context.tsx   @your-github-username
+supabase/                  @your-github-username
+
+# ── CI/CD pipelines ───────────────────────────────────────────
+.github/                   @your-github-username
+
+# ── Core trading engine ───────────────────────────────────────
+lib/trade-engine/          @your-github-username
+lib/market-data/           @your-github-username
+context/trading-context.tsx @your-github-username
+
+# ── Tests ─────────────────────────────────────────────────────
+__tests__/                 @your-github-username

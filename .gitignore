@@ -1,0 +1,46 @@
+# ── Next.js / v0 internal files ──────────────────────────────
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.npmrc
+.snowflake/
+.v0-trash/
+.vercel/
+next.user-config.*
+
+# ── Environment variables (NEVER commit these) ────────────────
+.env
+.env.local
+.env*.local
+.env.production
+.env.staging
+
+# ── Certificates / private keys ──────────────────────────────
+*.pem
+*.key
+*.p12
+
+# ── Dependencies ──────────────────────────────────────────────
+node_modules/
+
+# ── Build output ─────────────────────────────────────────────
+.next/
+out/
+dist/
+
+# ── Test coverage ─────────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ── OS files ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editor ────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ── TypeScript build info ─────────────────────────────────────
+tsconfig.tsbuildinfo
